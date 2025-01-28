@@ -1,0 +1,53 @@
+h1, .h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56.88px;
+  letter-spacing: 1px;
+  @media (max-width: $tablet) {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.92px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.92px;
+  }
+}
+
+
+h2, .h2 {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 500;
+  margin-bottom: 32px;
+  @media (max-width: $tabletS) {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.t-bold {
+  font-weight: 700;
+}
+
+
+.alter-title {
+  font-size: 40px;
+  line-height: 57px;
+  font-weight: 500;
+  @media (max-width: $tablet) {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  @media (max-width: $mobile) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
