@@ -14157,7 +14157,7 @@ class $3ed269f2f0fb224b$export$2e2bcd8739ae039 extends $4040acfd8584338d$export$
     createThumbnailFromUrl(file, width, height, resizeMethod, fixOrientation, callback, crossOrigin) {
         // Not using `new Image` here because of a bug in latest Chrome versions.
         // See https://github.com/enyo/dropzone/pull/226
-        let img = document.createElement("img");
+        let img = document.createElement("./img");
         if (crossOrigin) img.crossOrigin = crossOrigin;
         // fixOrientation is not needed anymore with browsers handling imageOrientation
         fixOrientation = getComputedStyle(document.body)["imageOrientation"] == "from-image" ? false : fixOrientation;

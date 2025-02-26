@@ -2917,37 +2917,37 @@ main {
     .slider-next.swiper-button-disabled svg path {
       fill: #282739; }
 
-.tabs {
+.tabs .simplebar-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: -6px;
-  overflow-x: auto; }
-  .tabs__item {
-    margin: 6px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0.008em;
-    padding: 12px 14px;
-    background-color: #F4F7FB;
-    color: #5D6C7B;
-    border-radius: 10px; }
-    @media (max-width: 767.92px) {
-      .tabs__item {
-        padding: 11px;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 23.4px; } }
-    .tabs__item:not(.tabs__item--active) {
-      -webkit-transition: opacity 0.3s;
-      transition: opacity 0.3s; }
-      .tabs__item:not(.tabs__item--active):hover {
-        opacity: 0.7; }
-    .tabs__item[data-active], .tabs__item--active {
-      background-color: #6F73EE;
-      color: #fff;
-      cursor: auto; }
+  white-space: nowrap; }
+
+.tabs__item {
+  margin: 6px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.008em;
+  padding: 12px 14px;
+  background-color: #F4F7FB;
+  color: #5D6C7B;
+  border-radius: 10px; }
+  @media (max-width: 767.92px) {
+    .tabs__item {
+      padding: 11px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 23.4px; } }
+  .tabs__item:not(.tabs__item--active) {
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
+    .tabs__item:not(.tabs__item--active):hover {
+      opacity: 0.7; }
+  .tabs__item[data-active], .tabs__item--active {
+    background-color: #6F73EE;
+    color: #fff;
+    cursor: auto; }
 
 .blog {
   margin-bottom: 120px; }
@@ -3650,6 +3650,27 @@ main {
       @media (max-width: 1080px) {
         .catalog__sub .catalog-subcategory {
           min-width: unset; } }
+    .catalog__sub .simplebar-track.simplebar-horizontal {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1680px; }
+      @media (max-width: 1760px) {
+        .catalog__sub .simplebar-track.simplebar-horizontal {
+          max-width: 100%;
+          margin: 0 40px; } }
+      @media (max-width: 1080px) {
+        .catalog__sub .simplebar-track.simplebar-horizontal {
+          max-width: 1000px;
+          margin: 0; } }
+      @media (max-width: 1040px) {
+        .catalog__sub .simplebar-track.simplebar-horizontal {
+          max-width: 100%;
+          margin: 0 40px; } }
+      @media (max-width: 575.98px) {
+        .catalog__sub .simplebar-track.simplebar-horizontal {
+          margin: 0 16px; } }
     .catalog__sub .simplebar-content {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4879,13 +4900,11 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%; }
-  .info-tabs__top {
+  .info-tabs__top .simplebar-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow: hidden;
-    overflow-x: auto;
-    width: 100%; }
+    white-space: nowrap; }
   .info-tabs__blocks {
     position: relative;
     top: -1px;
@@ -7881,20 +7900,34 @@ main {
       background-color: #6F73EE; }
 
 .catalog__sub .simplebar-track.simplebar-horizontal,
-.filter-body__list .simplebar-track.simplebar-horizontal {
-  height: 7px; }
+.features__content .simplebar-track.simplebar-horizontal,
+.tabs .simplebar-track.simplebar-horizontal,
+.info-tabs__top .simplebar-track.simplebar-horizontal {
+  height: 3px; }
 
-.catalog__sub .simplebar-scrollbar::before,
-.filter-body__list .simplebar-scrollbar::before {
-  background: #6f73ee; }
+.catalog__sub .simplebar-scrollbar,
+.features__content .simplebar-scrollbar,
+.tabs .simplebar-scrollbar,
+.info-tabs__top .simplebar-scrollbar {
+  background: #555555; }
 
 .catalog__sub .simplebar-track.simplebar-horizontal,
-.filter-body__list .simplebar-track.simplebar-horizontal {
-  height: 8px; }
+.features__content .simplebar-track.simplebar-horizontal,
+.tabs .simplebar-track.simplebar-horizontal,
+.info-tabs__top .simplebar-track.simplebar-horizontal {
+  height: 2px;
+  background: #c4c4c4; }
 
-.catalog__sub .simplebar-track.simplebar-vertical,
+.filter-body__list .simplebar-scrollbar {
+  background: #555555; }
+
+.filter-body__list .simplebar-track.simplebar-horizontal {
+  height: 2px;
+  background: #c4c4c4; }
+
 .filter-body__list .simplebar-track.simplebar-vertical {
-  width: 8px; }
+  width: 2px;
+  background: #c4c4c4; }
 
 /*!*******************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/dropzone/dist/dropzone.css ***!
