@@ -1711,6 +1711,9 @@ h3 {
     @media (max-width: 1080px) {
       .header__wrapper {
         padding: 18px 0; } }
+    @media (max-width: 767.92px) {
+      .header__wrapper {
+        padding: 10px 0; } }
   .header__nav-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1762,7 +1765,7 @@ h3 {
         left: calc(50% - 50vw);
         color: #fff;
         margin-top: 0;
-        padding: 12px 0;
+        padding: 8px 0;
         background-color: #fff;
         overflow-y: auto;
         max-height: calc(100vh - var(--header-height));
@@ -1772,9 +1775,6 @@ h3 {
       .header__nav {
         font-size: 18px;
         line-height: 20px; } }
-    @media (max-width: 400px) {
-      .header__nav {
-        padding: 15px 10px; } }
     .header__nav .header__link {
       display: none; }
       @media (max-width: 1080px) {
